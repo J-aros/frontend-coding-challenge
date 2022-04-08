@@ -16,19 +16,23 @@ import UnidadTributariaMensual from "./components/Pages/UnidadTributariaMensual"
 function App() {
   return (
     <Container>
-      <Sidebar />
       <Header />
+
       <BrowserRouter>
+        <Sidebar />
         <Routes>
-          <Route path="/" element={<Bitcoin />} />
+          <Route path="/bitcoin" element={<Bitcoin />} />
           <Route path="/dolaracuerdo" element={<DolarAcuerdo />} />
           <Route path="/dolarobservado" element={<DolarObservado />} />
           <Route path="/euro" element={<Euro />} />
           <Route path="/imacec" element={<Imacec />} />
-          <Route path="/libradecobre" element={<LibraDeCobre />} />
+          <Route path="/" element={<LibraDeCobre />} />
           <Route path="/tasadesempleo" element={<TasaDeDesempleo />} />
           <Route path="/unidadfomento" element={<UnidadFomento />} />
-          <Route path="/utm" element={<UnidadTributariaMensual />} />
+          <Route
+            path="/unidadtributariamensual"
+            element={<UnidadTributariaMensual />}
+          />
         </Routes>
       </BrowserRouter>
       <Footer />
