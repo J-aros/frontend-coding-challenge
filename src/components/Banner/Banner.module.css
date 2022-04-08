@@ -1,11 +1,7 @@
-.main {
-  grid-area: main;
-}
-
 .main__header {
   display: flex;
-   flex-direction: column;
-  margin: 20px;
+  flex-direction: column;
+
   padding: 20px;
   height: 150px;
   background-color: #e3e4e6;
