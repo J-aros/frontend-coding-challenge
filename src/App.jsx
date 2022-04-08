@@ -12,6 +12,7 @@ import LibraDeCobre from "./components/Pages/LibraDeCobre";
 import TasaDeDesempleo from "./components/Pages/TasaDeDesempleo";
 import UnidadFomento from "./components/Pages/UnidadFomento";
 import UnidadTributariaMensual from "./components/Pages/UnidadTributariaMensual";
+import Banner from "./components/Banner/Banner";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
       <BrowserRouter>
         <Sidebar />
+        <Banner />
         <Routes>
           <Route path="/bitcoin" element={<Bitcoin />} />
           <Route path="/dolaracuerdo" element={<DolarAcuerdo />} />
