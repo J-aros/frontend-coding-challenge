@@ -22,9 +22,4 @@
   .header__search {
     margin-left: 0;
   }
-
-  .sidenav {
-    position: relative;
-    transform: translateX(0);
-  }
 }
