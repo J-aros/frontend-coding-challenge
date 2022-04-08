@@ -6,8 +6,6 @@
   width: 15rem;
   position: fixed;
   overflow-y: auto;
-  /* transform: translateX(-245px);
-  transition: all 0.6s ease-in-out; */
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   z-index: 200;
   background-color: #394263;
@@ -15,11 +13,7 @@
 
 .sidenav__logo {
   text-align: center;
-  color: #f0bc74
-}
-
-.sidenav.active {
-  transform: translateX(0);
+  color: #f0bc74;
 }
 
 .sidenav__close-icon {
@@ -41,13 +35,19 @@
 }
 
 .sidenav__list_item {
+  text-decoration: none;
   padding: 0.5rem;
   color: #ddd;
   text-align: center;
   font-size: 1rem;
   line-height: 1, 5rem;
   letter-spacing: normal;
- 
+}
+
+.sidenav__list_item_active {
+  text-decoration: none;
+  color: #f0bc74;
+  cursor: pointer;
 }
 
 .sidenav__icon {
